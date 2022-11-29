@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <locale.h>
+ int main ()
+{
+setlocale(LC_ALL,"Portuguese");
+printf ("O que deseja?\n");
+char Pizza;
+printf ("\nQueijo - A");
+printf ("\nMolho - B");
+printf ("\nCalabresa - C");
+printf ("\nOrégano - D");
+printf ("\nMassa - E\n");
+scanf("%c",&Pizza);
+switch(Pizza)
+{
+case 'A':
+printf("Quantas gramas de Queijo?");
+int A;
+scanf("%d",&A);
+float B;
+B=A*1;
+printf("Reais Em Queijo:%.f",B);
+break;
+case 'B':
+printf("Quantas gramas de Molho?");
+int X;
+scanf("%d",&X);
+float Y;
+Y=X*2;
+printf("Reais Em Molho:%.f",Y);
+break;
+case 'C':
+printf("Quantas gramas de Calabresa?");
+int C;
+scanf("%d",&C);
+float D;
+D=C*3;
+printf("Reais Em Calabresa:%.f",D);
+break;
+case 'D':
+printf("Quantas gramas de Orégano?");
+int E;
+scanf("%d",&E);
+float F;
+F=E*4;
+printf("Reais Em Orégano:%.f",F);
+break;
+case 'E':
+printf("Quantas Massas?");
+int G;
+scanf("%d",&G);
+float H;
+H=G*5;
+printf("Reais Em Massa:%.f",H);
+break;
+}
+return (0);
+}
