@@ -53,6 +53,9 @@ float H;
 H=G*5;
 printf("Reais Em Massa:%.f",H);
 break;
+default:
+printf("Caractere digitado inválido, digite tal qual a forma que aparece na, inclusive se for Maiúscula e minúscula.");
+break;
 }
 return (0);
 }
